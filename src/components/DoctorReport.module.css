@@ -1,0 +1,217 @@
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 28px;
+  background: #fff;
+  font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+}
+
+.titleArea {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1a3a5c;
+  padding-bottom: 16px;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.alertUrgent {
+  background: #fff0f0;
+  border-left: 4px solid #cc0000;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  color: #cc0000;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  border-bottom: 1px solid #dde3ea;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.scoreTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.scoreTable th {
+  background: #eef3f8;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #dde3ea;
+}
+
+.scoreTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.scoreVal {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  text-align: center;
+}
+
+.scoreMax {
+  color: #999;
+  text-align: center;
+}
+
+.levelChip {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #e8e8e8;
+  color: #333;
+}
+
+.noTag {
+  color: #888;
+  font-size: 0.95rem;
+  padding: 8px 0;
+}
+
+.tagList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tagItem {
+  font-size: 1rem;
+  color: #1a3a5c;
+  font-weight: 600;
+  padding: 6px 12px;
+  background: #f0f6ff;
+  border-radius: 8px;
+}
+
+.tagBullet {
+  color: #2a6db5;
+  margin-right: 4px;
+}
+
+.alertTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.alertTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.alertId {
+  font-weight: 700;
+  color: #555;
+  width: 40px;
+}
+
+.alertLabel {
+  color: #333;
+}
+
+.alertResult {
+  font-weight: 700;
+  width: 80px;
+  text-align: center;
+}
+
+.positive {
+  color: #cc0000;
+}
+
+.negative {
+  color: #666;
+}
+
+.rowUrgent {
+  background: #fff0f0;
+}
+
+.rowWarning {
+  background: #fff8e0;
+}
+
+.urgentNote {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #fff0f0;
+  border: 1px solid #ffaaaa;
+  border-radius: 8px;
+  color: #cc0000;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tagComments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tagComment {
+  padding: 12px 14px;
+  background: #f9fafb;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.tagCommentLabel {
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.tagCommentText {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #dde3ea;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}

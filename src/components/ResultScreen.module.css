@@ -1,0 +1,125 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+
+.header {
+  padding: 28px 28px 16px;
+  border-bottom: 1px solid #dde3ea;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 6px;
+}
+
+.hint {
+  font-size: 1rem;
+  color: #666;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  padding: 16px 28px 0;
+  border-bottom: 2px solid #dde3ea;
+}
+
+.tab {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: #f5f7fa;
+  border: 1px solid #dde3ea;
+  border-bottom: none;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  color: #666;
+  transition: background 0.15s;
+}
+
+.tab + .tab {
+  margin-left: 4px;
+}
+
+.activeTab {
+  background: #fff;
+  color: #1a3a5c;
+  border-color: #dde3ea;
+  border-bottom: 2px solid #fff;
+  margin-bottom: -2px;
+}
+
+.actionBar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 28px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.printButton {
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ffffff;
+  border: 2px solid #2a6db5;
+  color: #2a6db5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.printButton:active {
+  background: #e8f0fa;
+}
+
+.pdfButton {
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #2a6db5;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.pdfButton:disabled {
+  background: #aab8c8;
+  cursor: not-allowed;
+}
+
+.resetButton {
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #fff;
+  border: 2px solid #aaa;
+  color: #555;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background 0.15s;
+}
+
+.resetButton:active {
+  background: #f5f5f5;
+}
+
+.reportWrapper {
+  padding: 24px 28px;
+  background: #f0f4f8;
+}
+
+.bottomActions {
+  display: flex;
+  gap: 12px;
+  padding: 20px 28px;
+  flex-wrap: wrap;
+  border-top: 1px solid #f0f0f0;
+}

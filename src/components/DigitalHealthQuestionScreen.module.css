@@ -1,0 +1,339 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #f0f4f8;
+  padding: 16px 0 12px;
+  z-index: 10;
+  margin-bottom: 24px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.backBtn {
+  padding: 8px 18px;
+  font-size: 1rem;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  flex: 1;
+}
+
+.scaleGuide {
+  background: #f0f6ff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.sectionBadge {
+  display: inline-block;
+  background: #2a6db5;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+
+.sectionDesc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questionCard {
+  background: #fff;
+  border: 2px solid #dde6f0;
+  border-radius: 14px;
+  padding: 20px 20px 16px;
+  transition: border-color 0.15s;
+}
+
+.questionCard.answered {
+  border-color: #b3d0f0;
+}
+
+.questionCard.missing {
+  border-color: #f44336;
+  background: #fff8f8;
+}
+
+.questionText {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.questionNum {
+  display: inline-block;
+  background: #e8f0fa;
+  color: #2a6db5;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+/* オプションボタン */
+.optionList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.optionButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 2px solid #dde;
+  border-radius: 10px;
+  background: #fafafa;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  transition: background 0.12s, border-color 0.12s;
+  width: 100%;
+}
+
+.optionButton:active {
+  background: #e8f0fa;
+}
+
+.optionButton.selectedOption {
+  border-color: #2a6db5;
+  background: #e8f0fa;
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.optionValue {
+  display: inline-block;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: #e8e8e8;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.selectedOption .optionValue {
+  background: #2a6db5;
+  color: #fff;
+}
+
+.optionLabel {
+  line-height: 1.4;
+}
+
+/* 5点スケール横並び */
+.scale5Grid {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.scale5Button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 4px;
+  border: 2px solid #dde;
+  border-radius: 10px;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #555;
+  transition: background 0.12s, border-color 0.12s;
+  min-height: 64px;
+  justify-content: center;
+}
+
+.scale5Button.selectedOption {
+  border-color: #2a6db5;
+  background: #e8f0fa;
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.scale5Num {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.scale5Button.selectedOption .scale5Num {
+  color: #2a6db5;
+}
+
+.scale5LabelText {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.3;
+  min-height: 2em;
+}
+
+/* PHQ-9 / GAD-7 ガイド */
+.moodGuide {
+  background: #f0f6ff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.moodGuideRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.moodGuideItem {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.moodGuideItem strong {
+  color: #1a3a5c;
+}
+
+/* 送信エリア */
+.submitArea {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 2px solid #eee;
+}
+
+.missingWarning {
+  background: #fff3f3;
+  border: 1px solid #ffaaaa;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #c62828;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.jumpButton {
+  padding: 8px 16px;
+  border: 1px solid #c62828;
+  border-radius: 8px;
+  background: #fff;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  background: #2a6db5;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 2px 8px rgba(42, 109, 181, 0.3);
+}
+
+.submitButton:active {
+  background: #1d5290;
+}
+
+.submitDisabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.submitDisabled:active {
+  background: #b0bec5;
+}
+
+/* P9警告 */
+.p9Warning {
+  background: #fff8e1;
+  border: 2px solid #ffa000;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #5d4037;
+  line-height: 1.7;
+}
+
+.p9WarningTitle {
+  font-weight: 700;
+  color: #e65100;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}

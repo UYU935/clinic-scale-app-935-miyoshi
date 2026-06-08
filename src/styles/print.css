@@ -1,0 +1,15 @@
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  .print-page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 12mm;
+  }
+}

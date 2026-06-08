@@ -1,0 +1,96 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background: #f0f4f8;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.scaleList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.scaleButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 28px 32px;
+  background: #ffffff;
+  border: 2px solid #2a6db5;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  transition: background 0.15s, box-shadow 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.scaleButton:active {
+  background: #e8f0fa;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.scaleArrow {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #2a6db5;
+}
+
+.scaleName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+
+.scaleDesc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.scaleButtonDisabled {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 32px;
+  background: #f5f5f5;
+  border: 2px solid #cccccc;
+  border-radius: 16px;
+  opacity: 0.6;
+}
+
+.scaleButtonDisabled .scaleName {
+  color: #888;
+}
+
+.scaleButtonDisabled .scaleDesc {
+  color: #aaa;
+  font-size: 0.9rem;
+}

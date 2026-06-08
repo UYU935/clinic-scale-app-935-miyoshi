@@ -1,0 +1,133 @@
+.page {
+  font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+.titleArea {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1a3a5c;
+  padding-bottom: 12px;
+}
+
+.mainTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.section {
+  margin-bottom: 22px;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  border-bottom: 1px solid #cce0f5;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.scoreTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.scoreTable th {
+  background: #e8f0fa;
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #cce0f5;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+
+.scoreTable td {
+  padding: 7px 12px;
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+.scoreTable tr:nth-child(even) td {
+  background: #f8faff;
+}
+
+.flagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.flagChip {
+  display: inline-block;
+  background: #fff3e0;
+  border: 1px solid #ffb74d;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  color: #e65100;
+}
+
+.noFlag {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* P9アラート（医師用） */
+.p9AlertRow {
+  background: #fff3e0;
+}
+
+.p9AlertCell {
+  color: #b71c1c !important;
+  font-weight: 700 !important;
+}
+
+.p9UrgentBanner {
+  background: #ffebee;
+  border: 2px solid #c62828;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #c62828;
+}
+
+.severityChip {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.sev0 { background: #e8f5e9; color: #1b5e20; }
+.sev1 { background: #f1f8e9; color: #33691e; }
+.sev2 { background: #fff8e1; color: #f57f17; }
+.sev3 { background: #fbe9e7; color: #bf360c; }
+.sev4 { background: #ffebee; color: #b71c1c; }
+
+.footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 0.82rem;
+  color: #999;
+  text-align: center;
+}
