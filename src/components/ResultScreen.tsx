@@ -16,6 +16,7 @@ type Tab = 'patient' | 'doctor';
 export function ResultScreen({ result, onReset }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>('patient');
   const [pdfLoading, setPdfLoading] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   async function handlePDF(type: Tab) {
     setPdfLoading(true);
@@ -32,6 +33,17 @@ export function ResultScreen({ result, onReset }: Props) {
 
   return (
     <div className={styles.container}>
+      {showConfirm && (
+        <div className={styles.overlay}>
+          <div className={styles.dialog}>
+            <p className={styles.dialogText}>ホームに戻りますか？<br />結果は消去されます。</p>
+            <div className={styles.dialogButtons}>
+              <button className={styles.dialogCancel} onClick={() => setShowConfirm(false)}>キャンセル</button>
+              <button className={styles.dialogConfirm} onClick={onReset}>ホームに戻る</button>
+            </div>
+          </div>
+        </div>
+      )}
       <div className={styles.header}>
         <h1 className={styles.title}>問診レポート</h1>
         <p className={styles.hint}>以下のレポートを印刷またはPDFとして保存してください。</p>
@@ -66,7 +78,7 @@ export function ResultScreen({ result, onReset }: Props) {
         >
           {pdfLoading ? '作成中...' : `📄 ${activeTab === 'patient' ? '患者用PDF' : '医師用PDF'}を作成`}
         </button>
-        <button className={styles.resetButton} onClick={onReset}>
+        <button className={styles.resetButton} onClick={() => setShowConfirm(true)}>
           ← 最初に戻る
         </button>
       </div>
@@ -94,7 +106,7 @@ export function ResultScreen({ result, onReset }: Props) {
         >
           {pdfLoading ? '作成中...' : `📄 ${activeTab === 'patient' ? '患者用PDF' : '医師用PDF'}を作成`}
         </button>
-        <button className={styles.resetButton} onClick={onReset}>
+        <button className={styles.resetButton} onClick={() => setShowConfirm(true)}>
           ← 最初に戻る
         </button>
       </div>
